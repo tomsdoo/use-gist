@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "tomsd",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "4.7.1",
+    "typescript": "5.4.2"
+  }
 }
