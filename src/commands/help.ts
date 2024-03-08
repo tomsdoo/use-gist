@@ -11,7 +11,8 @@ const helpText = `
 const generalHelpText = `
 ${packageJson.name}@${packageJson.version}
 
-help: show help
+config: show config
+help  : show help
 `;
 
 export class HelpCommand extends CommandBase {

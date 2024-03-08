@@ -14,11 +14,15 @@ export class Params {
     this.options = options;
     this.definitions = {
       help: "boolean",
+      format: "string",
       ...(definitions ?? {}),
     };
   }
   public get help() {
     return this.getValue("help");
+  }
+  public get format() {
+    return this.getStringValue("format");
   }
   protected getValue(name: string) {
     if(!(name in this.definitions)) {
@@ -39,5 +43,11 @@ export class Params {
         return value;
       }
     }
+  }
+  protected getStringValue(name: string): string | undefined {
+    const value = this.getValue(name);
+    if(typeof value === "string") {
+      return value;
+    }else{return;}
   }
 }
