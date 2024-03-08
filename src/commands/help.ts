@@ -13,6 +13,7 @@ ${packageJson.name}@${packageJson.version}
 
 config: show config
 help  : show help
+list  : list items
 `;
 
 export class HelpCommand extends CommandBase {
