@@ -1,0 +1,29 @@
+{
+  "name": "use-gist",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "use-gist": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts",
+    "test": "exit 0"
+  },
+  "keywords": [],
+  "author": "tomsd",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.11.25",
+    "tsup": "8.0.2",
+    "tsx": "4.7.1",
+    "typescript": "5.4.2"
+  },
+  "dependencies": {
+    "@tomsd/coflater": "1.0.1",
+    "octokit": "3.1.2"
+  }
+}
