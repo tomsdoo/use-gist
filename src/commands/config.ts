@@ -15,7 +15,7 @@ const helpText = `
 --set-auth [personal access token]
   sets auth
 
---setformat [json|table]
+--set-format [json|table]
   sets preference of output format
 `;
 
