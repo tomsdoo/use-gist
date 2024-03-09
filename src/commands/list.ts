@@ -35,8 +35,8 @@ export class ListCommand extends CommandBase {
     const gist = new Gist(auth);
     const items = await gist.list().then(items => items.map(item => {
       if(params.allProps){return item;}else{
-        const {id, description} = item;
-        return {id, description};
+        const {id, description, useGistEnabled} = item;
+        return {id, description, useGistEnabled};
       }
     }))
 
