@@ -14,12 +14,16 @@ export class Params {
     this.options = options;
     this.definitions = {
       help: "boolean",
+      debug: "boolean",
       format: "string",
       ...(definitions ?? {}),
     };
   }
   public get help() {
     return this.getValue("help");
+  }
+  public get debug() {
+    return this.getValue("debug");
   }
   public get format() {
     return this.getStringValue("format");

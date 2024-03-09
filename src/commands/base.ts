@@ -46,4 +46,9 @@ export class CommandBase {
       }
     }
   }
+  protected debug(data: any) {
+    if(this.params.debug){
+      console.debug(data);
+    }
+  }
 }
