@@ -11,9 +11,11 @@ const helpText = `
 const generalHelpText = `
 ${packageJson.name}@${packageJson.version}
 
-config: show config
-help  : show help
-list  : list items
+config  : show config
+download: download files
+exec    : execute script in file
+help    : show help
+list    : list items
 `;
 
 export class HelpCommand extends CommandBase {
