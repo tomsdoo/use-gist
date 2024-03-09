@@ -28,7 +28,7 @@ export class Config {
     this.coflater = new Coflater<AppConfig>;
   }
   public get fileName() {
-    return join(homedir(), `.${packageJson.name}-config.json`);
+    return join(homedir(), `.${packageJson.name.replace(/^@.+\//, "")}-config.json`);
   }
   protected  async ensureFile() {
     await stat(this.fileName).catch(async () => {

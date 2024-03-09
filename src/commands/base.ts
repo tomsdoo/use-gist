@@ -21,7 +21,7 @@ export class CommandBase {
     this.config = new Config();
   }
   public async showHelp() {
-    const commandLine = `${packageJson.name} ${this.name}`;
+    const commandLine = `${packageJson.name.replace(/^@.+\//,"")} ${this.name}`;
     console.log([commandLine, "", this.helpText.split("\n").map(line => `\t${line}`).join("\n")].join("\n"));
   }
   public async execute() {

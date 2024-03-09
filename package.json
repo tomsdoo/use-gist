@@ -1,5 +1,5 @@
 {
-  "name": "use-gist",
+  "name": "@tomsd/use-gist",
   "version": "0.2.0",
   "description": "",
   "main": "dist/index.js",
